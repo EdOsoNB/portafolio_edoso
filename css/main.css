@@ -1,0 +1,275 @@
+*:root {
+    --bg-color: #F5F5F5;
+    --bg-divisor: #EAF2FD;
+    --color-text: #464646;
+    --icons: #2A7AE4;
+    --black: #000;
+
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--bg-color) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: var(--color-text);
+}
+ol, ul,li {
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Todas las secciones */
+section div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section h2,
+section h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+
+/*Sección Menu*/
+
+section.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 32px 0;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu__header img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 32px;
+}
+
+.menu__list__item a[href*="contacto"] {
+    font-weight: 700;
+}
+
+/*Sección Title*/
+.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.title__profile {
+    border-radius: 50%;
+    height: 368px;
+    width: 368px;
+}
+.title__container .title__bio {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61.05px;
+}
+.title__container .title__subsection {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.83px;
+    text-align: left;
+}
+.title__network {
+    display: flex;
+    gap: 32px;
+}
+
+/*Sección About*/
+
+section.about .about__title {
+    text-align: left;
+}
+section.about .about__paragraph {
+    width: 751px;
+}
+
+/*Sección Hobbies*/
+
+.skills [class*="__line"],
+.hobbies [class*="__line"] {
+    display: flex;
+    gap: 16px;
+}
+.skills__box,
+.hobbies__box {
+    align-items: flex-end;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 174px;
+    padding: 16px;
+    width: 176px;
+    
+}
+.skills__box ul,
+.hobbies__box  ul {
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Experiencia Académica*/
+.academic__courses {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.academic__courses__box {
+    height: 347px;
+    width: 368px;
+}
+.academic__courses__item__img {
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 286px;
+    justify-content: center;
+    width: 368px;
+}
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.academic__courses__item__img img {
+    height: 130px;
+    width: 192px;
+}
+.academic__courses__item__title h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+.academic__courses__item__subtitle p {
+    font-weight: 500;
+    margin: 0;
+}
+
+/* experiencia*/
+section.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.experiencie__box {
+    display: flex;
+    gap: 16px;
+}
+.experiencie__box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.experience__img {
+    width: 752px;
+}
+.experience__info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 368px;
+}
+.experience__info .experience__title {
+    font-size: 22px;
+    margin: 0;
+    text-align: left;
+    line-height: 25.83px;
+}
+.experience__info .experience__text {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    text-align: left;
+    line-height: 25.83px;
+}
+.experience__description {
+    margin: 0;
+}
+.experience__repo button,
+.experience__demo button {
+    border: 1px solid var(--icons);
+    color: var(--icons);
+    height: 51px;
+    padding: 16px;
+    cursor: pointer;
+    width: 116px;
+}
+.experience__demo button {
+    background-color: var(--icons);
+    color: #FFFFFF;
+}
+
+/*footeer*/
+
+section.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+.footer__rodape {
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: center;
+    width: 229px;
+}
+
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
