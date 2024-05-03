@@ -23,12 +23,11 @@ a{
     text-decoration: none;
     color: var(--black);
 }
+img {
+    max-width: 100%;
+}
 
 /* Todas las secciones */
-section div {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 section h2,
 section h3 {
     text-align: center;
@@ -42,9 +41,9 @@ section h3 {
 section.menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 32px 0;
+    padding: 0 10px;
 }
 
 .menu__header {
@@ -56,9 +55,12 @@ section.menu {
     width: 24px;
     height: 24px;
 }
+.menu__title {
+    font-size: 16px;
+}
 
 .menu__list {
-    display: flex;
+    display: none;
     gap: 32px;
 }
 
@@ -69,46 +71,48 @@ section.menu {
 /*Sección Title*/
 .title__div {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 .title__profile {
     border-radius: 50%;
-    height: 368px;
-    width: 368px;
+    height: 98px;
+    width: 98px;
 }
 .title__container .title__bio {
     font-weight: 700;
-    font-size: 52px;
+    font-size: 22px;
     line-height: 61.05px;
 }
 .title__container .title__subsection {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 25.83px;
-    text-align: left;
+    text-align: center;
 }
 .title__network {
     display: flex;
+    justify-content: center;
     gap: 32px;
 }
 
 /*Sección About*/
+.about__container {
+    padding: 0 10px;
+}
 
 section.about .about__title {
     text-align: left;
 }
-section.about .about__paragraph {
-    width: 751px;
-}
 
-/*Sección Hobbies*/
+/*Sección Skills & Hobbies*/
 
 .skills [class*="__line"],
 .hobbies [class*="__line"] {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .skills__box,
@@ -130,7 +134,8 @@ section.about .about__paragraph {
 /* Experiencia Académica*/
 .academic__courses {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .academic__courses__box {
@@ -172,11 +177,11 @@ section.experience {
 }
 .experiencie__box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
 }
-.experiencie__box:nth-child(odd) {
-    flex-direction: row-reverse;
-}
+
 .experience__img {
     width: 752px;
 }
@@ -237,39 +242,72 @@ section.footer{
 /*Tablet*/
 @media (min-width: 768px) {
 
-/* Menú */
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+    /* Todas las secciones */
+section div {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/* Menú */
+.menu__title {
+    font-size: 32px;
+}
+.menu__list {
+    display: flex;
+}
+.menu__list_2 {
+    display: none;
+}
+section.menu {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 32px 0;
+}
+/*title*/
+.title__div {
+    flex-direction: row-reverse;
+}
+.title__profile {
+    height: 368px;
+    width: 368px;
+}
+.title__container .title__bio {
+    font-size: 52px;
+}
+.title__container .title__subsection {
+    font-size: 22px;
+    text-align: left;
+}
+.title__network {
+    justify-content: flex-start;
+}
 
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
+/*Sección About*/
+.about__container {
+    padding: 0;
+}
+section.about .about__paragraph {
+    width: 751px;
+}
 
 /*Skills*/
+.skills [class*="__line"],
+.hobbies [class*="__line"] {
+    flex-wrap: nowrap;
+}
 
-/*Hobbies*/
- 
 /*Formación Académica*/
+.academic__courses {
+    flex-wrap: nowrap;
+}
+
+.experiencie__box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
 
 /*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
+.academic__courses {
+    justify-content: space-between;
+}
 
 }
